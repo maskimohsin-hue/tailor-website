@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الخياط التقليدي - تصميم راقي</title>
+
+<style>
+/* RESET & BODY */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Tahoma,Arial,sans-serif}
+body{background:#fdf7f0;color:#333;line-height:1.6}
+
+/* NAVBAR */
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:rgba(255,255,255,0.95);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  box-shadow:0 2px 8px rgba(0,0,0,.1);
+  z-index:100;
+}
+nav h2{color:#b38b3d;font-weight:bold;font-size:1.5rem}
+nav ul{display:flex;gap:25px}
+nav ul li{list-style:none}
+nav ul li a{
+  text-decoration:none;
+  color:#333;
+  font-weight:bold;
+  transition:0.3s;
+}
+nav ul li a:hover{color:#b38b3d}
+
+/* HEADER */
+header{
+  background:url("https://images.unsplash.com/photo-1600185365483-26d7a4cc7519") center/cover;
+  height:90vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+}
+header .overlay{
+  background:rgba(0,0,0,.55);
+  padding:30px;
+  border-radius:15px;
+  animation:fadeIn 1.5s ease-out;
+}
+header h1{font-size:3rem;margin-bottom:10px}
+header p{margin-bottom:20px;font-size:1.2rem}
+header a{
+  background:#b38b3d;
+  color:white;
+  padding:15px 30px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+header a:hover{background:#8c6a28}
+
+/* ANIMATION */
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(20px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* SECTIONS */
+section{padding:60px 20px;max-width:1100px;margin:auto}
+h2{text-align:center;margin-bottom:30px;color:#7a5c1c;font-size:2rem}
+
+/* ABOUT */
+.about{text-align:center;line-height:1.8;font-size:1.1rem;color:#5c4a36;max-width:800px;margin:auto;opacity:0;transform:translateY(30px);transition:1s}
+
+/* SERVICES */
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+.service{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  text-align:center;
+  box-shadow:0 8px 20px rgba(0,0,0,.12);
+  transition:0.4s;
+}
+.service:hover{
+  transform:translateY(-8px);
+  box-shadow:0 12px 25px rgba(0,0,0,.2);
+  color:#b38b3d;
+  font-weight:bold;
+}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+.gallery img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  border-radius:15px;
+  transition:0.3s;
+}
+.gallery img:hover{
+  transform:scale(1.05);
+  box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+/* CONTACT */
+.contact{text-align:center;margin-top:40px}
+.contact a{
+  display:inline-block;
+  margin:10px;
+  padding:15px 25px;
+  border-radius:50px;
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+.whatsapp{background:#25D366}
+.whatsapp:hover{background:#128C7E}
+.call{background:#333}
+.call:hover{background:#555}
+
+/* FOOTER */
+footer{
+  background:#b38b3d;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:30px;
+  font-weight:bold;
+}
+
+/* SCROLL ANIMATION */
+.scroll-show{opacity:1 !important; transform:translateY(0px) !important;}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h2>الخياط التقليدي</h2>
+  <ul>
+    <li><a href="#about">من نحن</a></li>
+    <li><a href="#services">خدماتنا</a></li>
+    <li><a href="#gallery">أعمالنا</a></li>
+    <li><a href="#contact">تواصل</a></li>
+  </ul>
+</nav>
+
+<header>
+  <div class="overlay">
+    <h1>خياطة تقليدية بجودة عالية</h1>
+    <p>جلابات، قفاطين، وتكشيطات بإبداع وفخامة</p>
+    <a href="https://wa.me/212600000000?text=سلام، بغيت نحجز موعد">احجز موعد عبر واتساب</a>
+  </div>
+</header>
+
+<section id="about" class="about">
+  <h2>من نحن</h2>
+  <p>
+    نحن خياطون تقليديون مع خبرة سنوات، متخصصون في الخياطة التقليدية والحديثة، مع لمسة دقيقة تُرضي جميع الأذواق.
+  </p>
+</section>
+
+<section id="services">
+  <h2>خدماتنا</h2>
+  <div class="services">
+    <div class="service">خياطة الجلابة</div>
+    <div class="service">القفطان والتكشيطة</div>
+    <div class="service">تعديل المقاسات</div>
+    <div class="service">أزياء المناسبات</div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>أعمالنا</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990" alt="جلابة">
+    <img src="https://images.unsplash.com/photo-1618354691550-25d9c3aafbf3" alt="قفطان">
+    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="تكشيطة">
+    <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb" alt="تفصيل">
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>تواصل معنا</h2>
+  <a class="whatsapp" href="https://wa.me/212600000000?text=سلام، بغيت نستفسر">WhatsApp</a>
+  <a class="call" href="tel:+212600000000">اتصل بنا</a>
+  <p>🕒 من الاثنين إلى السبت: 9:00 - 18:00</p>
+</section>
+
+<footer>
+  © 2026 الخياط التقليدي – جميع الحقوق محفوظة
+</footer>
+
+<script>
+// Simple scroll animation
+const scrollElements = document.querySelectorAll('.about');
+window.addEventListener('scroll', () => {
+  scrollElements.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if(rect.top < window.innerHeight - 100){
+      el.classList.add('scroll-show');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
