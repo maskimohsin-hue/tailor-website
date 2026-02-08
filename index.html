@@ -3,99 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الخياط التقليدي - تصميم راقي</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background: #fdf7f0; color: #333; line-height: 1.6; overflow-x: hidden; }
-        nav { position: fixed; top: 0; width: 100%; background: rgba(255,255,255,0.95); display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; box-shadow: 0 2px 8px rgba(0,0,0,.1); z-index: 100; }
-        nav h2 { color: #b38b3d; font-weight: bold; font-size: 1.5rem; }
-        nav ul { display: flex; gap: 25px; list-style: none; }
-        nav ul li a { text-decoration: none; color: #333; font-weight: bold; transition: 0.3s; }
-        nav ul li a:hover { color: #b38b3d; }
-        header { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&q=80") center/cover; height: 90vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; margin-top: 60px; }
-        .overlay { padding: 30px; animation: fadeIn 1.5s ease-out; }
-        header h1 { font-size: 3rem; margin-bottom: 10px; }
-        header p { margin-bottom: 20px; font-size: 1.2rem; }
-        header a { background: #b38b3d; color: white; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; transition: 0.3s; }
-        header a:hover { background: #8c6a28; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-        section { padding: 80px 20px; max-width: 1100px; margin: auto; }
-        h2 { text-align: center; margin-bottom: 40px; color: #7a5c1c; font-size: 2.2rem; }
-        .about { text-align: center; font-size: 1.2rem; max-width: 800px; margin: auto; }
-        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; }
-        .service { background: white; padding: 30px; border-radius: 15px; text-align: center; box-shadow: 0 8px 20px rgba(0,0,0,.08); transition: 0.4s; border-bottom: 4px solid transparent; }
-        .service:hover { transform: translateY(-10px); border-bottom: 4px solid #b38b3d; }
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-        .gallery img { width: 100%; height: 300px; object-fit: cover; border-radius: 15px; transition: 0.4s; }
-        .gallery img:hover { transform: scale(1.03); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
-        .contact { text-align: center; background: #fff; padding: 50px; border-radius: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-        .contact a { display: inline-block; margin: 10px; padding: 15px 35px; border-radius: 50px; color: white; text-decoration: none; font-weight: bold; transition: 0.3s; }
-        .whatsapp { background: #25D366; }
-        .call { background: #333; }
-        footer { background: #b38b3d; color: white; text-align: center; padding: 25px; font-weight: bold; }
-        @media (max-width: 768px) { nav { padding: 15px; } nav ul { display: none; } header h1 { font-size: 2rem; } }
-    </style>
+    <title>الخياط التقليدي - أسفي | أصالة وفخامة</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-<nav>
-    <h2>الخياط التقليدي</h2>
-    <ul>
-        <li><a href="#about">من نحن</a></li>
-        <li><a href="#services">خدماتنا</a></li>
-        <li><a href="#gallery">أعمالنا</a></li>
-        <li><a href="#contact">تواصل</a></li>
-    </ul>
-</nav>
+    <div id="backToTop"><i class="fas fa-arrow-up"></i></div>
 
-<header>
-    <div class="overlay">
-        <h1>خياطة تقليدية بجودة عالية</h1>
-        <p>إتقان، فخامة، وأصالة في كل غرزة</p>
-        <a href="https://wa.me/212600000000">احجز موعدك الآن</a>
+    <nav>
+        <h2>الخياط التقليدي</h2>
+        <ul>
+            <li><a href="#features">مميزاتنا</a></li>
+            <li><a href="#gallery">أعمالنا</a></li>
+            <li><a href="#testimonials">آراء الكليان</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="hero">
+            <h1>أصالة الخياطة بأسفي</h1>
+            <p>إتقان، فخامة، وأصالة في كل غرزة</p>
+            <a href="https://wa.me/212689565901" class="btn-cta">احجز موعدك الآن</a>
+        </div>
+    </header>
+
+    <section id="features">
+        <div class="features">
+            <div class="feature-box"><i class="fas fa-cut"></i><h3>فصالة دقيقة</h3><p>ضبط المقاسات باحترافية</p></div>
+            <div class="feature-box"><i class="fas fa-gem"></i><h3>أثواب رفيعة</h3><p>أجود أنواع الحرير والأثواب</p></div>
+            <div class="feature-box"><i class="fas fa-clock"></i><h3>مواعيد مضبوطة</h3><p>التزام تام بالوقت</p></div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2 class="section-title">إبداعاتنا</h2>
+        <div class="gallery">
+            <img src="i18.jpg">
+            <img src="i19.jpg">
+            <img src="i20.jpg">
+            <img src="i21.jpg">
+            <img src="i22.jpg">
+            <img src="i23.jpg">
+            <img src="i24.jpg">
+            <img src="i1.jpg"><img src="i2.jpg"><img src="i3.jpg"><img src="i4.jpg">
+            <img src="i5.jpg"><img src="i6.jpg"><img src="i7.jpg"><img src="i8.jpg">
+            <img src="i9.jpg">
+            <img src="i10.jpg">
+            <img src="i11.jpg">
+            <img src="i12.jpg">
+            <img src="i13.jpg">
+            <img src="i14.jpg">
+            <img src="i15.jpg">
+            <img src="i16.jpg">
+            <img src="i17.jpg">
+            <img src="i25.jpg">
+            <img src="i26.jpg">
+            
+        </div>
+    </section>
+
+    
+
+    <section id="contact">
+        <h2 class="section-title">تواصل مباشر</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>ورشة أسفي</h3>
+                <p>📍 الحي الصناعي، أسفي</p>
+                <a href="https://wa.me/212604756926" class="btn-social whatsapp"><i class="fab fa-whatsapp"></i> واتساب</a>
+                <a href="https://www.instagram.com/lz.hr2128?igsh=cnd2emkzNTA0dW95" class="btn-social insta"><i class="fab fa-instagram"></i> أنستغرام</a>
+            </div>
+            <div class="map">
+                <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13606.3123456789!2d-9.2345678!3d32.2891234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdac269600000000%3A0x00000000000000!2sSafi%20Industrial%20Zone!5e0!3m2!1sar!2sma!4v1700000000000" 
+    width="100%" 
+    height="250" 
+    style="border:0; border-radius:15px;" 
+    allowfullscreen="" 
+    loading="lazy">
+</iframe>
+            </div>
+        </div>
+    </section>
+    <section id="comments-section">
+    <h2 class="section-title">آراء الزبناء</h2>
+    <div class="comment-container">
+        <div class="comment-form">
+            <input type="text" id="userName" placeholder="إسمك الكريم">
+            <textarea id="userComment" placeholder="اكتب رأيك هنا..."></textarea>
+            <button onclick="addComment()">نشر التعليق</button>
+        </div>
+
+        <div id="commentsList" class="comments-list">
+            <div class="comment-item">
+        <strong>خديجة</strong>
+        <p>صراحة الله يعطيك الصحة، الجلابة جاتني هي هذيك.</p>
+        <span class="comment-date">منذ يومين</span>
     </div>
-</header>
 
-<section id="about">
-    <h2>من نحن</h2>
-    <div class="about">
-        <p>نحن نفتخر بتقديم أرقى تصاميم الخياطة التقليدية المغربية. نجمع بين مهارة اليد وإبداع التصميم لنمنحكم قطعاً فريدة تعكس هويتكم وأناقتكم.</p>
+    <div class="comment-item">
+        <strong>محمد بناني</strong>
+        <p>تبارك الله المعلم، السفيفة متقونة.</p>
+        <span class="comment-date">منذ أسبوع</span>
+    </div>
+
+            <div class="comment-item">
+                <strong>محمد بناني</strong>
+                <p>أول مرة نجرب خياطة هنا فالحي الصناعي، الصراحة المعلم تبارك الله عليه، "السفيفة" متقونة. بالتوفيق.</p>
+                <span class="comment-date">منذ 5 أيام</span>
+            </div>
+
+            <div class="comment-item">
+                <strong>حنان</strong>
+                <p>خيطت عندو قفطان، والخدمة كانت ناضية والقياس هو هذاك بلا ما نحتاج نعاود نقص منو.</p>
+                <span class="comment-date">منذ أسبوع</span>
+            </div>
+
+            <div class="comment-item">
+                <strong>سعاد</strong>
+                <p>تبارك الله الخدمة د اليد كتهضر، المعلم كينصحك بالثوب لي كيجي مع الموديل. غادة نرجع عندك أكيد.</p>
+                <span class="comment-date">منذ أسبوعين</span>
+            </div>
+        </div>
     </div>
 </section>
 
-<section id="services">
-    <h2>خدماتنا</h2>
-    <div class="services">
-        <div class="service"><h3>خياطة الجلابة</h3><p>تصاميم عصرية وتقليلدية</p></div>
-        <div class="service"><h3>القفطان المغربي</h3><p>لجميع مناسباتكم السعيدة</p></div>
-        <div class="service"><h3>التكشيطة</h3><p>أناقة ملكية لا مثيل لها</p></div>
-        <div class="service"><h3>إصلاح الملابس</h3><p>تعديلات دقيقة واحترافية</p></div>
-    </div>
-</section>
+    <footer>
+        <p>© 2026 الخياط التقليدي - أسفي - جميع الحقوق محفوظة</p>
+    </footer>
 
-<section id="gallery">
-    <h2>أعمالنا</h2>
-    <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&q=80" alt="خياطة">
-        <img src="https://images.unsplash.com/photo-1618354691550-25d9c3aafbf3?auto=format&fit=crop&q=80" alt="قفطان">
-        <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&q=80" alt="خياطة مغربية">
-        <img src="https://images.unsplash.com/photo-1598559069352-3d8437b0d427?auto=format&fit=crop&q=80" alt="ثوب">
-    </div>
-</section>
-
-<section id="contact">
-    <div class="contact">
-        <h2>تواصل معنا</h2>
-        <a class="whatsapp" href="https://wa.me/+212689565901">WhatsApp</a>
-        <a class="call" href="tel:+212689565901">اتصل بنا مباشر</a>
-        <p style="margin-top:20px; color: #777;">📍 المغرب - ورشة الخياطة التقليدية</p>
-    </div>
-</section>
-
-<footer>
-    © 2026 الخياط التقليدي – إبداع لا ينتهي
-</footer>
-
+    <script src="script.js"></script>
+    
 </body>
 </html>
-
